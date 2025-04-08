@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">2501 Mid_BMI</string>
+    <string name="text_title">BMI 계산기</string>
+    <string name="edit_name">성함 : </string>
+    <string name="edit_name_hint">성함을 입력하세요.</string>
+    <string name="edit_nameUnit">님</string>
+    <string name="edit_weight">몸무게 : </string>
+    <string name="edit_weight_hint">몸무게를 입력하세요.</string>
+    <string name="edit_weightUnit">kg</string>
+    <string name="edit_height">키 : </string>
+    <string name="edit_height_hint">키를 입력하세요.</string>
+    <string name="edit_heightUnit">cm</string>
+    <string name="calculator_Btn">계산하기</string>
+</resources>

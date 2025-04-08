@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_small"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:gravity="center"
+        android:text="@string/text_title"
+        android:textSize="@dimen/textSize_xlarge" />
+    
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_name"
+        android:textSize="@dimen/textSize_large" />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_xsmall"
+        android:hint="@string/edit_name_hint"
+        android:inputType="numbeDecimal"
+        android:textSize="@dimen/textSize_small" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_weight"
+        android:textSize="@dimen/textSize_large" />
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_xsmall"
+        android:hint="@string/edit_weight_hint"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/textSize_small" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_height"
+        android:textSize="@dimen/textSize_large" />
+
+    <EditText
+        android:id="@+id/edit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:hint="@string/edit_height_hint"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/textSize_small" />
+
+
+</LinearLayout>
