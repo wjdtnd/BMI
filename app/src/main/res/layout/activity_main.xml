@@ -16,55 +16,120 @@
         android:gravity="center"
         android:text="@string/text_title"
         android:textSize="@dimen/textSize_xlarge" />
-    
+
+    <!-- 성함 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin_xsmall">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_name"
+            android:textSize="@dimen/textSize_large" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/edit_name_hint"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/textSize_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_nameUnit"
+            android:textSize="@dimen/textSize_large" />
+
+    </LinearLayout>
+
+    <!-- 몸무게 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin_xsmall">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_weight"
+            android:textSize="@dimen/textSize_large" />
+
+        <EditText
+            android:id="@+id/weightInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/edit_weight_hint"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/textSize_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_weightUnit"
+            android:textSize="@dimen/textSize_large" />
+    </LinearLayout>
+
+    <!-- 키 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin_small">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_height"
+            android:textSize="@dimen/textSize_large" />
+
+        <EditText
+            android:id="@+id/heightInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/edit_height_hint"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/textSize_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_heightUnit"
+            android:textSize="@dimen/textSize_large" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculator_Btn"
+        android:layout_margin="@dimen/margin_xsmall"/>
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/edit_name"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/resultBMI"
         android:textSize="@dimen/textSize_large" />
 
-    <EditText
-        android:id="@+id/edit1"
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/imgv"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_xsmall"
-        android:hint="@string/edit_name_hint"
-        android:inputType="numbeDecimal"
-        android:textSize="@dimen/textSize_small" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/edit_weight"
-        android:textSize="@dimen/textSize_large" />
-
-    <EditText
-        android:id="@+id/edit2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_xsmall"
-        android:hint="@string/edit_weight_hint"
-        android:inputType="numberDecimal"
-        android:textSize="@dimen/textSize_small" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/edit_height"
-        android:textSize="@dimen/textSize_large" />
-
-    <EditText
-        android:id="@+id/edit3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_small"
-        android:hint="@string/edit_height_hint"
-        android:inputType="numberDecimal"
-        android:textSize="@dimen/textSize_small" />
-
+        android:src="@drawable/bmi"
+        android:adjustViewBounds="true"
+        />
 
 </LinearLayout>
